@@ -14,9 +14,11 @@ Text Domain:  accelerate-theme-child
 body {
 	background: #333;
 }
-body p,
-body a {
+body p {
 	color: #fff!important;
+}
+body a {
+	color: #45ac9d;
 }
 body ul {
 	list-style: none;
@@ -47,11 +49,11 @@ body ul {
 }
 .blog-post h3 {
 	font-size: 1.5em;
+	color: #45ac9d;
 }
 .read-more-link {
 	font-family: 'Montserrat';
 	font-weight: 700;
-	color: #45ac9d;
 	text-transform: uppercase;
 }
 
