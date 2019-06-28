@@ -22,7 +22,7 @@ get_header(); ?>
 
 		<section class="recent-posts">
 			<div class="site-content">
-				<!-- <div class="blog-post">
+				<div class="blog-post">
 					<h4>From The Blog</h4>
 					<?php query_posts('posts_per_page=1'); ?>
 				    	<?php while ( have_posts() ) : the_post(); ?>
@@ -30,7 +30,7 @@ get_header(); ?>
 				    		<?php the_excerpt(); ?> 
 				     	<?php endwhile; ?> 
 				    <?php wp_reset_query(); ?>
-				</div> -->
+				</div>
 			</div>
 		</section>
 
