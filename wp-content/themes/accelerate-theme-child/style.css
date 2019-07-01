@@ -24,7 +24,14 @@ body a {
 body ul {
 	list-style: none;
 }
-body h1 {
+body h1,
+body h3,
+body h5 {
+	color: #a6a6a6;
+}
+body h2,
+body h4,
+body h6 {
 	color: #45ac9d;
 }
 #navigation {
@@ -93,4 +100,15 @@ body h1 {
 }
 .entry-footer .entry-terms a {
 	color: #45ac9d;
+}
+
+
+/* CASE STUDIES */
+aside.case-study-sidebar {
+	float: left;
+	width: 300px;
+}
+div.case-study-images {
+	float: left;
+	width: 600px;
 }
