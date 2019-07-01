@@ -10,6 +10,7 @@ Tags:     	light, dark, two-columns, right-sidebar, responsive-layout, accessibi
 Text Domain:  accelerate-theme-child
 */
 
+
 /* GENERAL */
 body {
 	background: #333;
@@ -24,6 +25,7 @@ body ul {
 	list-style: none;
 }
 
+
 /* HOME PAGE */
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
@@ -34,6 +36,7 @@ body ul {
 .button {
     background: none repeat scroll 0 0 #45ac9d;
 }
+
 
 /* BLOG POSTS */
 .blog-post {
@@ -51,11 +54,22 @@ body ul {
 	font-size: 1.5em;
 	color: #45ac9d;
 }
+.entry-title {
+	color: #45ac9d;
+}
 .read-more-link {
 	font-family: 'Montserrat';
 	font-weight: 700;
 	text-transform: uppercase;
 }
+
+
+/* SIDEBAR */
+#sidebar ul li,
+#sidebar ul li a {
+	color: #a6a6a6;
+}
+
 
 /* FOOTER */
 .site-footer nav.social-media-navigation li {
