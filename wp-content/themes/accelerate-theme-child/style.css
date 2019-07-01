@@ -24,6 +24,9 @@ body a {
 body ul {
 	list-style: none;
 }
+body h1 {
+	color: #45ac9d;
+}
 #navigation {
 	background: #333;
 }
