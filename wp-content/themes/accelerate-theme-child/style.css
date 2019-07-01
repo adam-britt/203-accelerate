@@ -109,6 +109,9 @@ aside.case-study-sidebar {
 	width: 300px;
 }
 div.case-study-images {
-	float: left;
+	float: right;
 	width: 600px;
+}
+div.case-study-images img {
+	width: 100%;
 }
