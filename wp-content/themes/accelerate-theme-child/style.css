@@ -68,9 +68,12 @@ body ul {
 
 
 /* SIDEBAR */
+#sidebar h2 {
+	color: #a6a6a6;
+}
 #sidebar ul li,
 #sidebar ul li a {
-	color: #a6a6a6;
+	color: #45ac9d;
 }
 
 
