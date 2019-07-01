@@ -57,6 +57,9 @@ body ul {
 .entry-title {
 	color: #45ac9d;
 }
+.entry-time {
+	color: #a6a6a6;
+}
 .read-more-link {
 	font-family: 'Montserrat';
 	font-weight: 700;
@@ -74,4 +77,7 @@ body ul {
 /* FOOTER */
 .site-footer nav.social-media-navigation li {
 	margin: 1em auto;
+}
+.entry-footer .entry-terms a {
+	color: #45ac9d;
 }
