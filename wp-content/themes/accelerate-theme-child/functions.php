@@ -28,9 +28,7 @@ function create_custom_post_types() {
 			),
 			'public' => true,
 			'has_archive' => true,
-			'rewrite' => array(
-				'slug' => 'case-studies'
-			),
+			'rewrite' => array( 'slug' => 'case-studies' ),
 		),
 	);
 }
