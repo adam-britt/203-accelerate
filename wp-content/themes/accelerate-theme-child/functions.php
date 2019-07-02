@@ -32,6 +32,5 @@ function create_custom_post_types() {
 		),
 	);
 }
-
 // Hook custom post types function into theme
 add_action( 'init', 'create_custom_post_types' );
