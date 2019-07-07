@@ -36,12 +36,22 @@ get_header(); ?>
 
 				<?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
 			    	<?php while ( have_posts() ) : the_post();
-			    		
 			    		$image_1 = get_field('image_1');
 			    		$size = "medium";
+			    		$link = 'adambritt.io';
 			    	?>
 						<li class="individual-featured-work">
-							<figure><?php echo wp_get_attachment_image($image_1, $size); ?></figure>
+							<?php if($image_1) { 
+									echo '<a style="width: 300px; height: 221px;" href="';
+									echo $link;
+									echo '">';
+									echo wp_get_attachment_image($image_1, $size, $link);
+									echo '</a>';
+								}
+								else { echo '<div style="height: 229px;"></div>'; } ?>
+							<figure>
+								
+							</figure>
 			     			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 						</li>
 			     	<?php endwhile; ?> 

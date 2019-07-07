@@ -55,6 +55,7 @@ li.individual-featured-work {
 	width: 33%;
 	float: left;
 }
+li.individual-featured-work,
 .featured-work h3,
 .featured-work h4 {
 	text-align: center;
