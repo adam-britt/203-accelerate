@@ -28,7 +28,7 @@ body ul {
 body h1,
 body h3,
 body h5 {
-	color: #a6a6a6;
+	color: #afafaf;
 }
 body h2,
 body h4,
@@ -37,6 +37,9 @@ body h6 {
 }
 #navigation {
 	background: #333;
+}
+.page-header .primary-navigation {
+	padding: 3px 0 2px;
 }
 
 
@@ -51,15 +54,21 @@ body h6 {
     background: none repeat scroll 0 0 #45ac9d;
 }
 /* Featured Work */
-li.individual-featured-work {
+.featured-work .site-content > h3 {
+	text-transform: uppercase;
+}
+.individual-featured-work {
 	width: 33%;
 	float: left;
 }
-li.individual-featured-work,
+.individual-featured-work,
 .featured-work h3,
 .featured-work h4 {
 	text-align: center;
-	margin-bottom: 2em;
+	margin: 1.5em 0 1em;
+}
+.featured-work img {
+	max-width: 90%;
 }
 .recent-posts {
 	clear: both;
@@ -130,4 +139,56 @@ div.case-study-images {
 div.case-study-images img {
 	width: 100%;
 	margin: 3em 0 2em;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 992px) {
+
+    .hero-content h3 {
+		font-size: 1.1em;
+	}
+	.featured-work h3 {
+		margin-top: 1em;
+		font-size: 90%;
+		line-height: 1.5;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+
+	.hero-content h1 {
+    	font-size: 3em!important;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.page-header .top-logo {
+    	margin-bottom: 1.25em;
+    	margin-top: .5em;
+	}
+	.page-header .primary-navigation ul li {
+		width: 25%;
+		float: left;
+		font-size: 15px;
+		text-align: center;
+	}
+	.featured-work h3 {
+		margin-top: .5em;
+		line-height: 1.25;
+		font-size: 74%;
+	}
+
+}
+
+@media screen and (max-width: 375px) {
+
+	.page-header .primary-navigation ul li a {
+		font-size: 14px;
+	}
+
 }

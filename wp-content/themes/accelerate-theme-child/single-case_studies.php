@@ -37,15 +37,15 @@ get_header(); ?>
 				</aside>
 
 				<div class="case-study-images">
-					<?php if($image_1) { ?>
-						<?php echo wp_get_attachment_image( $image_1, $size ); ?>
-					<?php } ?>
-					<?php if($image_2) { ?>
-						<?php echo wp_get_attachment_image( $image_2, $size ); ?>
-					<?php } ?>
-					<?php if($image_3) { ?>
-						<?php echo wp_get_attachment_image( $image_3, $size ); ?>
-					<?php } ?>
+					<?php if($image_1) {
+						echo wp_get_attachment_image( $image_1, $size );
+					}
+					if($image_2) {
+						echo wp_get_attachment_image( $image_2, $size );
+					}
+					if($image_3) {
+						echo wp_get_attachment_image( $image_3, $size );
+					} ?>
 				</div>
 			</article>
 
