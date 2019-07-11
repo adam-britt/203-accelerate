@@ -16,12 +16,15 @@
 			<div class="site-info">
 				<div class="site-description">
 					<p><?php bloginfo('description'); ?></p>
-					<p>&copy; <?php bloginfo('title'); ?>, LLC
+					<p class="footer-copyright">&copy; <?php bloginfo('title'); ?>, LLC</p>
+					<nav class="social-nav-mobile" role="navigation">
+						<?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>
+					</nav>
 				</div>
-
-				<nav class="social-media-navigation" role="navigation">
+				<nav class="social-nav-desktop" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>
 				</nav>
+				
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 

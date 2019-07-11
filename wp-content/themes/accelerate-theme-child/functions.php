@@ -34,3 +34,6 @@ function create_custom_post_types() {
 }
 // Hook custom post types function into theme
 add_action( 'init', 'create_custom_post_types' );
+
+// Enable social media icons
+add_filter( 'storm_social_icons_size', create_function( '', 'return "normal";' ) );

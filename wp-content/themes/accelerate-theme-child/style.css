@@ -113,22 +113,19 @@ aside.case-study-sidebar {
 	float: left;
 	width: 300px;
 }
-div.case-study-images {
-	float: right;
-	width: 600px;
-}
 div.case-study-images img {
 	width: 100%;
+	height: auto;
+	border: 1px solid #dddddd;
 	margin: 3em 0 2em;
 }
 
 
-
 /* CASE STUDIES ARCHIVE */
-.sidebar .clearfix .case-study-sidebar h2 {
+aside.case-study-sidebar h2 {
 	margin: 2em 0 0;
 }
-.sidebar .clearfix .case-study-sidebar h5 {
+aside.case-study-sidebar h5 {
 	margin: 0 0 .5em;
 	text-transform: unset;
 	font-size: .75em;
@@ -148,13 +145,25 @@ div.case-study-images img {
 
 
 /* FOOTER */
-.site-footer nav.social-media-navigation li {
-	margin: 1em auto;
-}
 .entry-footer .entry-terms a {
 	color: #45ac9d;
 }
-
+.footer-copyright {
+	float: left;
+	margin: 0 auto;
+}
+.social-icon a i {
+	width: 18px;
+	height: 18px;
+	padding: 2.5px 1.5px 1px 2.5px;
+	margin: -5px 0 0 8px;
+	border-radius: 50%;
+	background: white;
+	color: #333;
+	float: right;
+	text-align: center;
+	vertical-align: middle;
+}
 
 
 
@@ -180,10 +189,40 @@ div.case-study-images img {
     	font-size: 3em!important;
     }
 
+
+    /* CASE STUDIES ARCHIVE */
+    .archive article.case-study {
+	    clear: both;
+	    display: flex;
+	    align-items: center; /* vertical */
+	}
+    aside.case-study-sidebar {
+        float: left;
+        width: 34%;
+        margin: 0 6% 0 0;
+    }
+    div.case-study-images {
+        float: left;
+        width: 60%;
+    }
+
+
+    /* FOOTER */
+    .social-nav-mobile {
+		display: none;
+    }
+    .social-nav-desktop {
+		display: block;
+    }
+    .site-footer .site-description p {
+    	margin: 0 auto 1em;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
 
+	/* HEADER */
 	.page-header .top-logo {
     	margin-bottom: 1.25em;
     	margin-top: .5em;
@@ -200,12 +239,28 @@ div.case-study-images img {
 		font-size: 74%;
 	}
 
+
+	/* FOOTER */
+    .social-nav-mobile {
+		display: none;
+    }
+    .social-nav-desktop {
+		display: block;
+    }
+
 }
 
 @media screen and (max-width: 375px) {
 
+	/* HEADER */
 	.page-header .primary-navigation ul li a {
 		font-size: 14px;
 	}
 
 }
+
+/*						FLEXBOX GUIDE									*/
+/*	display: flex;           		Magic begins                    	*/
+/*	justify-content: center;		Center horizontally					*/
+/* 	align-items: center;     		Center vertically               	*/
+/* 	min-width: 0; 					Ignore the width of the content 	*/
