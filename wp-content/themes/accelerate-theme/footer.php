@@ -18,11 +18,16 @@
 					<p><?php bloginfo('description'); ?></p>
 					<p class="footer-copyright">&copy; <?php bloginfo('title'); ?>, LLC</p>
 					<nav class="social-nav-mobile" role="navigation">
-						<?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>
+						<?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu screen-reader-text' ) ); ?>
 					</nav>
 				</div>
 				<nav class="social-nav-desktop" role="navigation">
-					<?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>
+					<?php wp_nav_menu( array(
+						'theme_location' => 'social-media',
+						'menu_class' => 'social-media-menu',
+						'link_before' => '<span class="screen-reader-text">',
+    					'link_after' => '</span>'
+					) ); ?>
 				</nav>
 				
 			</div><!-- .site-info -->
